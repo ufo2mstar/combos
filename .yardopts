@@ -1,6 +1,7 @@
 --title 'Combos: generate combinations of your Arrays'
 --verbose
 #--output-dir './combo_docs'
+--output-dir './docs'
 
 --use-cache
 --protected
