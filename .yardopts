@@ -1,0 +1,17 @@
+--title 'Combos: generate combinations of your Arrays'
+--verbose
+#--output-dir './combo_docs'
+
+--use-cache
+--protected
+--private
+
+#--exclude 'name'
+
+--tag 'try: see what comes'
+
+-
+README.md
+CHANGELOG.md
+LICENSE
+LEGAL

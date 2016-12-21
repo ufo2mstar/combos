@@ -2,6 +2,7 @@ require "combos/version"
 
 module Combos
 
+  # Generates All possible Combinations of all your array elements
   def power_pair *true_params, &blk
     params = true_params.map(&:dup)
     n      =params.length
@@ -10,6 +11,7 @@ module Combos
     blk ? @combos.each { |a| yield a } : @combos
   end
 
+  # Generates {Combos}
   def serial_pair *params, &blk
     smart_pair nil, *params, &blk
   end
