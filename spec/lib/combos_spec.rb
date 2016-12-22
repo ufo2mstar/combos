@@ -3,7 +3,7 @@ require_relative "spec_helper"
 describe Combos do
   describe 'Gem Specs' do
     it 'has a version number' do
-      puts "Version: #{Combos::VERSION}"
+      # puts "Version: #{Combos::VERSION}"
       expect(Combos::VERSION).not_to be nil
     end
   end
@@ -17,6 +17,9 @@ describe Combos do
   end
 
   describe 'Method Behavior: Happy path' do
+    before(:each) do
+      RESET_RAND[]
+    end
     describe 'power_pair' do
       it 'generates all possible combinations (not permutations)' do
         res = power_pair(NUMS, WORDS, CHARS)
@@ -39,7 +42,7 @@ describe Combos do
     describe 'random_pair' do
       it 'generates random combinations: max array length long!' do
         res = random_pair NUMS, WORDS, CHARS
-        exp_res = [[2, "a", "#"], [4, "b", "!"], [3, "c", "!"], [1, "a", "!"]]
+        exp_res = [[4, "b", "!"], [1, "a", "#"], [3, "c", "!"], [2, "b", "#"]]
         expect(res).to eq(exp_res)
       end
     end
@@ -47,7 +50,7 @@ describe Combos do
     describe 'combo_pair' do
       it 'generates specified number of combinations' do
         res = combo_pair 5, NUMS, WORDS, CHARS
-        exp_res = [[3, "a", "!"], [2, "b", "#"], [3, "c", "!"], [4, "c", "#"], [1, "c", "#"]]
+        exp_res = [[2, "a", "!"], [1, "c", "#"], [3, "b", "#"], [3, "b", "#"], [4, "c", "#"]]
         expect(res).to eq(exp_res)
       end
     end

@@ -1,4 +1,16 @@
 module Combos
+
+  protected
+  # puts if $VERBOSE flag is truthy
+  def vputs *args
+    puts *args if $VERBOSE
+  end
+
+  # print if $VERBOSE flag is truthy
+  def vprint *args
+    print *args if $VERBOSE
+  end
+
   private
   # @return [Array(Arrays(Objects))] the Array of combinations
   # @yieldreturn [Array(Objects)] yields to the block if &blk is provided
@@ -8,18 +20,18 @@ module Combos
   # @param [Array(Arrays(Objects))] true_params Array of the different Object Arrays for pairing
   # @param [Object] blk 
   def smart_pair rnd = nil, *true_params, &blk
-    safe_quit=-> { puts "exiting smart_pair"; return [] }
+    safe_quit=-> { vputs "exiting smart_pair"; [] }
     begin
       params = true_params.map(&:dup)
     rescue TypeError => e
-      puts "#{e.class}: #{e.message}"
-      safe_quit[]
+      vputs "#{e.class}: #{e.message}"
+      return safe_quit[]
     rescue Exception => e
-      puts "#{e.class}: #{e.message}"
-      safe_quit[]
+      vputs "#{e.class}: #{e.message}"
+      return safe_quit[]
     end
     params = [] if params.nil?
-    (print "params are empty.."; safe_quit[]) if params.flatten.empty?
+    (vprint "params are empty.."; return safe_quit[]) if params.flatten.empty?
 
     # if rnd is a number, increase the first ary with rand entries (assuming first ary entry is larger)
     if rnd.class == Fixnum
@@ -30,7 +42,7 @@ module Combos
       params[0] = res
     end
     n =params.length
-    (p "No Ary passed for smart_pairing", :rnd; return) if n == 0
+    (vputs "No Ary passed for smart_pairing", :rnd; return) if n == 0
     params.each_with_index { |a, i| eval "@a#{i} = #{a}" }
     lim = params.max_by(&:length).size
     rand_samp =-> ary { ary.shuffle! if rnd; ary.shift }

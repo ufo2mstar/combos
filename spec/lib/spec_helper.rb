@@ -1,11 +1,12 @@
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
-require "combos"
 
+
+require "combos"
 include Combos
 
 API_METHODS = %w[power_pair serial_pair random_pair combo_pair]
 
-srand 123 # setting this for repeatable testing of random methods
+RESET_RAND=->{srand 123} # setting this for repeatable testing of random methods
 NUMS, WORDS, CHARS = [1, 2, 3, 4], %w[a b c], ['#' , '!']
 
 if __FILE__ == $0
