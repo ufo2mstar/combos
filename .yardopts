@@ -3,7 +3,7 @@
 #--output-dir './combo_docs'
 --output-dir './docs'
 
---use-cache
+#--use-cache
 --protected
 --private
 
@@ -13,5 +13,6 @@
 
 -
 README.md
+Combos_intro.md
 CHANGELOG.md
 LICENSE.txt

@@ -3,6 +3,11 @@ require "combos"
 
 include Combos
 
+API_METHODS = %w[power_pair serial_pair random_pair combo_pair]
+
+srand 123 # setting this for repeatable testing of random methods
+NUMS, WORDS, CHARS = [1, 2, 3, 4], %w[a b c], ['#' , '!']
+
 if __FILE__ == $0
   tic
   # require_relative '../../useful_support/action_files/yaml_rider'
@@ -121,6 +126,6 @@ if __FILE__ == $0
   combo_pair(10, m, n, o) { |x, y, z| pr "#{x} #{y} #{z} \n", :rnd }; p
   p combo_pair 10, m, n, o
   p combo_pair 10, m
-  p combo_pair
+  p combo_pair 10, []
 end
 
