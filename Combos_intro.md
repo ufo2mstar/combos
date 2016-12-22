@@ -13,6 +13,8 @@ numbs = [1,2,3]
 chars = ['#','!']
 ````
 
+more examples will follow
+
 ### Power Pair
 ### Serial Pair
 ### Random Pair
