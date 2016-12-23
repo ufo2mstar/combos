@@ -1,5 +1,20 @@
+
 # Combos
 
+[![Build Status](https://travis-ci.org/ufo2mstar/combos.svg?branch=master)](https://travis-ci.org/ufo2mstar/combos)
+
+
+[![Homepage](http://img.shields.io/badge/home-yardoc.org-blue.svg)](http://yardoc.org)
+[![GitHub](http://img.shields.io/badge/github-lsegal/yard-blue.svg)](http://github.com/lsegal/yard)
+[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://rubydoc.org/gems/yard/frames)
+[![IRC Chat](https://img.shields.io/badge/chat-%23yard%20@%20freenode-orange.svg)](irc://irc.freenode.net/yard)
+
+[![Gem Version](https://badge.fury.io/rb/yard.svg)](http://github.com/lsegal/yard/releases)
+[![Build Status](https://travis-ci.org/lsegal/yard.svg?branch=master)](https://travis-ci.org/lsegal/yard)
+[![Coverage Status](https://coveralls.io/repos/github/lsegal/yard/badge.svg)](https://coveralls.io/github/lsegal/yard)
+[![License](http://img.shields.io/badge/license-MIT-yellowgreen.svg)](#license)
+
+## Synopsis
 Thanks for trying out my Ruby Combinator. Hope it serves your purpose!
 
 ## Installation

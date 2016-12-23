@@ -23,6 +23,7 @@ describe Combos do
     describe 'power_pair' do
       it 'generates all possible combinations (not permutations)' do
         res = power_pair(NUMS, WORDS, CHARS)
+        # todo: think of a better way to manage the expecteds
         exp_res = [[1, "a", "#"], [1, "a", "!"], [1, "b", "#"], [1, "b", "!"], [1, "c", "#"], [1, "c", "!"],
                    [2, "a", "#"], [2, "a", "!"], [2, "b", "#"], [2, "b", "!"], [2, "c", "#"], [2, "c", "!"],
                    [3, "a", "#"], [3, "a", "!"], [3, "b", "#"], [3, "b", "!"], [3, "c", "#"], [3, "c", "!"],

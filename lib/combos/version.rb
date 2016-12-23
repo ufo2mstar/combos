@@ -1,5 +1,5 @@
 module Combos
-  VERSION = "0.1.0"
+  VERSION = "0.1.1"
 
   SPEC_SUMMARY = <<EOF
 A helpful gem that can be used to generate combinations on the fly~

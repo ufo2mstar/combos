@@ -7,6 +7,7 @@ module Combos
   # @see #brute_pair
   # @param [Array(Arrays(Objects))] params
   # @param [Object] blk
+  # @note notived a few [FATAL] failed to allocate memory errors for large arrays, need to rework and optimize method
   def power_pair *params, &blk
     brute_pair *params, &blk
   end

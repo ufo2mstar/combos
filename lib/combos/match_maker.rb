@@ -46,8 +46,8 @@ module Combos
     params.each_with_index { |a, i| eval "@a#{i} = #{a}" }
     lim = params.max_by(&:length).size
     rand_samp =-> ary { ary.shuffle! if rnd; ary.shift }
-    @combos = lim.times.map { params.each_with_index.map { |ary, i| eval "ary=[@a#{i}.sample]" if ary.empty?; rand_samp[ary] } }
-    blk ? @combos.each { |a| yield a } : @combos
+    combos = lim.times.map { params.each_with_index.map { |ary, i| eval "ary=[@a#{i}.sample]" if ary.empty?; rand_samp[ary] } }
+    blk ? combos.each { |a| yield a } : combos
   end
 
   # @param [Array(Arrays(Objects))] true_params
@@ -58,7 +58,7 @@ module Combos
     params = true_params.map(&:dup)
     n =params.length
     params.each_with_index { |a, i| eval "@a#{i} = #{a}" }
-    @combos = n!=1 ? eval("#{k = '@a0'; (n-1).times { |i| k+=".product(@a#{i+1})" }; k+=".map(&:flatten)"}") : @a0 #.map{|x|[x]}
-    blk ? @combos.each { |a| yield a } : @combos
+    combos = n!=1 ? eval("#{k = '@a0'; (n-1).times { |i| k+=".product(@a#{i+1})" }; k+=".map(&:flatten)"}") : @a0 #.map{|x|[x]}
+    blk ? combos.each { |a| yield a } : combos
   end
 end

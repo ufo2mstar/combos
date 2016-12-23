@@ -1,5 +1,7 @@
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
-
+# Coveralls
+require 'coveralls'
+Coveralls.wear!
 
 require "combos"
 include Combos
