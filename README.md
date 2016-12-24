@@ -1,7 +1,7 @@
 
 # Combos
 
-[![Build Status](https://travis-ci.org/ufo2mstar/combos.svg?branch=master)](https://travis-ci.org/ufo2mstar/combos)
+[![Build Status](https://travis-ci.org/ufo2mstar/combos.svg?branch=master)](https://travis-ci.org/ufo2mstar/combos?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/ufo2mstar/combos/badge.svg?branch=master)](https://coveralls.io/github/ufo2mstar/combos?branch=master)
 
 
