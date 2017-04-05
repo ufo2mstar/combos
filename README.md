@@ -1,17 +1,15 @@
 
 # Combos
 
-[![Build Status](https://travis-ci.org/ufo2mstar/combos.svg?branch=master)](https://travis-ci.org/ufo2mstar/combos?branch=master)
+[![Build Status](https://travis-ci.org/ufo2mstar/combos.svg?branch=master)](https://travis-ci.org/ufo2mstar/combos)
 [![Coverage Status](https://coveralls.io/repos/github/ufo2mstar/combos/badge.svg?branch=master)](https://coveralls.io/github/ufo2mstar/combos?branch=master)
-
-
+[![Changelog](http://img.shields.io/badge/ruby->2.0.0-yellowgreen.svg)](https://www.ruby-lang.org/en/downloads/)
 [![GitHub](https://img.shields.io/badge/github-combos-blue.svg)](http://github.com/ufo2mstar/combos)
-[![Documentation](http://img.shields.io/badge/docs-rdoc.info-red.svg)](https://ufo2mstar.github.io/combos/docs/)
+[![Documentation](http://img.shields.io/badge/docs-yard.info-red.svg)](https://ufo2mstar.github.io/combos/docs/)
+[![License](http://img.shields.io/badge/license-MIT-yellowgreen.svg)](#license)
 <!--[![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/combos)-->
 <!--[![IRC Chat](https://img.shields.io/badge/chat-%23yard%20@%20freenode-orange.svg)](irc://irc.freenode.net/yard)-->
 
-[![License](http://img.shields.io/badge/license-MIT-yellowgreen.svg)](#license)
-[![Changelog](http://img.shields.io/badge/ruby->2.0.0-yellowgreen.svg)](https://www.ruby-lang.org/en/downloads/)
 
 ## Synopsis
 Thanks for trying out my Ruby Combinator. Hope it serves your purpose!
